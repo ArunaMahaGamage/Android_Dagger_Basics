@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         UserRepository userRepository2 = applicationGraph.userRepository();
 
-        Log.e("MainActivity : ","" + (userRepository != userRepository2));
+        Log.e("MainActivity : ","userRepository is 'not equal' to userRepository2 : " + (userRepository != userRepository2));
 
         if (userRepository == null) {
             Log.e("MainActivity : ", "userRepository is null");
