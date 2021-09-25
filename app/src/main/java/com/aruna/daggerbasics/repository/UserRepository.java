@@ -1,11 +1,12 @@
 package com.aruna.daggerbasics.repository;
 
+import com.aruna.daggerbasics.MyCustomScope;
+
 import javax.inject.Inject;
-import javax.inject.Singleton;
 
 // Scope this class to a component using @Singleton scope (i.e. ApplicationGraph)
 
-@Singleton
+@MyCustomScope
 public class UserRepository {
     private final UserLocalDataSource userLocalDataSource;
     private final UserRemoteDataSource userRemoteDataSource;

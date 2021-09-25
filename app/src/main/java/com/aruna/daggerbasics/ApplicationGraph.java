@@ -2,8 +2,6 @@ package com.aruna.daggerbasics;
 
 import com.aruna.daggerbasics.repository.UserRepository;
 
-import javax.inject.Singleton;
-
 import dagger.Component;
 
 // @Component makes Dagger create a graph of dependencies
@@ -12,7 +10,7 @@ import dagger.Component;
 // with this annotation (i.e. @Singleton) are scoped to the graph and the same
 // instance of that type is provided every time the type is requested.
 
-@Singleton
+@MyCustomScope
 @Component
 public interface ApplicationGraph {
     // The return type  of functions inside the component interface is
